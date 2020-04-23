@@ -23,9 +23,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CFFE79D7244FC32200A3A869 /* libvulkan.1.2.135.dylib in CopyFiles */,
-				CFFE79D8244FC32200A3A869 /* libvulkan.1.dylib in CopyFiles */,
 				CFFE79D9244FC32200A3A869 /* libglfw.3.4.dylib in CopyFiles */,
+				CFFE79D8244FC32200A3A869 /* libvulkan.1.dylib in CopyFiles */,
+				CFFE79D7244FC32200A3A869 /* libvulkan.1.2.135.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +47,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFE79D2244FC2AF00A3A869 /* libglfw.3.4.dylib in Frameworks */,
-				CFFE79D4244FC2FE00A3A869 /* libvulkan.1.dylib in Frameworks */,
 				CFFE79D6244FC30200A3A869 /* libvulkan.1.2.135.dylib in Frameworks */,
+				CFFE79D4244FC2FE00A3A869 /* libvulkan.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
