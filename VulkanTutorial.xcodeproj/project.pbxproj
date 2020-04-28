@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF59FB722457A9A500524C58 /* libvulkan.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFE79D3244FC2FE00A3A869 /* libvulkan.1.dylib */; };
+		CF59FB732457A9AB00524C58 /* libvulkan.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFFE79D3244FC2FE00A3A869 /* libvulkan.1.dylib */; };
+		CFEE95D12453B3680078112C /* libvulkan.1.2.135.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFE79D5244FC30200A3A869 /* libvulkan.1.2.135.dylib */; };
+		CFEE95D22453B3770078112C /* libvulkan.1.2.135.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFFE79D5244FC30200A3A869 /* libvulkan.1.2.135.dylib */; };
 		CFFE79C3244FBC1300A3A869 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFFE79C2244FBC1300A3A869 /* main.cpp */; };
 		CFFE79D2244FC2AF00A3A869 /* libglfw.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFE79D1244FC2AF00A3A869 /* libglfw.3.4.dylib */; };
-		CFFE79D4244FC2FE00A3A869 /* libvulkan.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFE79D3244FC2FE00A3A869 /* libvulkan.1.dylib */; };
-		CFFE79D6244FC30200A3A869 /* libvulkan.1.2.135.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFE79D5244FC30200A3A869 /* libvulkan.1.2.135.dylib */; };
-		CFFE79D7244FC32200A3A869 /* libvulkan.1.2.135.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFFE79D5244FC30200A3A869 /* libvulkan.1.2.135.dylib */; };
-		CFFE79D8244FC32200A3A869 /* libvulkan.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFFE79D3244FC2FE00A3A869 /* libvulkan.1.dylib */; };
 		CFFE79D9244FC32200A3A869 /* libglfw.3.4.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFFE79D1244FC2AF00A3A869 /* libglfw.3.4.dylib */; };
 /* End PBXBuildFile section */
 
@@ -23,15 +23,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CF59FB732457A9AB00524C58 /* libvulkan.1.dylib in CopyFiles */,
+				CFEE95D22453B3770078112C /* libvulkan.1.2.135.dylib in CopyFiles */,
 				CFFE79D9244FC32200A3A869 /* libglfw.3.4.dylib in CopyFiles */,
-				CFFE79D8244FC32200A3A869 /* libvulkan.1.dylib in CopyFiles */,
-				CFFE79D7244FC32200A3A869 /* libvulkan.1.2.135.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CFEE95CB2453A8350078112C /* shader.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
+		CFEE95CC2453A84E0078112C /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.frag; sourceTree = "<group>"; };
 		CFFE79BF244FBC1300A3A869 /* VulkanTutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VulkanTutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFE79C2244FBC1300A3A869 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CFFE79CA244FBDEC00A3A869 /* libglfw.3.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.4.dylib; path = "../../../../../usr/local/Cellar/glfw/HEAD-e65de29/lib/libglfw.3.4.dylib"; sourceTree = "<group>"; };
@@ -47,14 +49,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFE79D2244FC2AF00A3A869 /* libglfw.3.4.dylib in Frameworks */,
-				CFFE79D6244FC30200A3A869 /* libvulkan.1.2.135.dylib in Frameworks */,
-				CFFE79D4244FC2FE00A3A869 /* libvulkan.1.dylib in Frameworks */,
+				CFEE95D12453B3680078112C /* libvulkan.1.2.135.dylib in Frameworks */,
+				CF59FB722457A9A500524C58 /* libvulkan.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CFEE95CA2453A8000078112C /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				CFEE95CB2453A8350078112C /* shader.vert */,
+				CFEE95CC2453A84E0078112C /* shader.frag */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
 		CFFE79B6244FBC1300A3A869 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +86,7 @@
 		CFFE79C1244FBC1300A3A869 /* VulkanTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				CFEE95CA2453A8000078112C /* shaders */,
 				CFFE79C2244FBC1300A3A869 /* main.cpp */,
 			);
 			path = VulkanTutorial;
@@ -102,6 +114,7 @@
 				CFFE79BB244FBC1300A3A869 /* Sources */,
 				CFFE79BC244FBC1300A3A869 /* Frameworks */,
 				CFFE79BD244FBC1300A3A869 /* CopyFiles */,
+				CFEE95D02453B2210078112C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -143,6 +156,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFEE95D02453B2210078112C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $SRCROOT/VulkanTutorial/shaders\n/Users/tscritch/Documents/vulkansdk/macOS/bin/glslangValidator -V shader.vert\n/Users/tscritch/Documents/vulkansdk/macOS/bin/glslangValidator -V shader.frag\n\nmkdir $TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/shaders\nmv vert.spv $TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/shaders/vert.spv\nmv frag.spv $TARGET_BUILD_DIR/$CONTENTS_FOLDER_PATH/shaders/frag.spv\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFFE79BB244FBC1300A3A869 /* Sources */ = {
