@@ -49,8 +49,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFE79D2244FC2AF00A3A869 /* libglfw.3.4.dylib in Frameworks */,
-				CFEE95D12453B3680078112C /* libvulkan.1.2.135.dylib in Frameworks */,
 				CF59FB722457A9A500524C58 /* libvulkan.1.dylib in Frameworks */,
+				CFEE95D12453B3680078112C /* libvulkan.1.2.135.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
